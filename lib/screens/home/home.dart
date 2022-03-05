@@ -17,12 +17,6 @@ class HomePage extends StatelessWidget {
               SearchInput(),
               CategoriesList('Новый арривал'),
               ClothesItem(),
-              SizedBox(height: 50),
-              Container(
-                child: Text(
-                  'ggggg',
-                ),
-              )
             ],
           ),
         ));
