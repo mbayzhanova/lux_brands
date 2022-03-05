@@ -15,8 +15,14 @@ class HomePage extends StatelessWidget {
             children: [
               CustomAppBar(),
               SearchInput(),
-              CategoriesList('New arrival'),
+              CategoriesList('Новый арривал'),
               ClothesItem(),
+              SizedBox(height: 50),
+              Container(
+                child: Text(
+                  'ggggg',
+                ),
+              )
             ],
           ),
         ));
