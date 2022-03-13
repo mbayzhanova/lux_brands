@@ -15,6 +15,7 @@ class ClothesItem extends StatelessWidget {
             Stack(
               children: [
                 Container(
+                  margin: EdgeInsets.all(8),
                   height: 170,
                   width: 200,
                   decoration: BoxDecoration(
@@ -23,8 +24,33 @@ class ClothesItem extends StatelessWidget {
                         image: AssetImage(clothes.imageUrl),
                         fit: BoxFit.fitHeight),
                   ),
-                )
+                ),
+                Positioned(
+                    right: 20,
+                    top: 15,
+                    child: Container(
+                        padding: EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.9),
+                            shape: BoxShape.circle),
+                        child:
+                            Icon(Icons.favorite, color: Colors.red, size: 15)))
               ],
+            ),
+            Text(
+              clothes.title,
+              style: TextStyle(fontWeight: FontWeight.bold, height: 1.5),
+            ),
+            Text(
+              clothes.subtitle,
+              style: TextStyle(fontWeight: FontWeight.bold, height: 1.5),
+            ),
+            Text(
+              clothes.price,
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  height: 1.5,
+                  color: Theme.of(context).primaryColor),
             )
           ],
         ),

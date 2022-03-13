@@ -17,7 +17,7 @@ class CategoriesList extends StatelessWidget {
           Row(
             children: [
               Text(
-                'View all',
+                'Еще',
                 style: TextStyle(
                     color: Theme.of(context).primaryColor,
                     fontWeight: FontWeight.bold,
