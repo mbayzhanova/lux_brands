@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             children: [
               CustomAppBar(),
               SearchInput(),
-              CategoriesList('Новый арривал'),
+              CategoriesList('New arrival'),
               ClothesItem(),
             ],
           ),
