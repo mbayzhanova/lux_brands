@@ -14,6 +14,7 @@ class NewArrival extends StatelessWidget {
           Container(
             height: 280,
             child: ListView.separated(
+                padding: EdgeInsets.symmetric(horizontal: 25),
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) =>
                     ClothesItem(clothesList[index]),
