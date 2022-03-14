@@ -20,7 +20,13 @@ class Clothes {
           'Платье JACQUEMUS',
           '\$654,84',
           'assets/images/jc.png',
-          ['assets/images/jc1.png', 'assets/images/jc2.png'])
+          ['assets/images/jc1.png', 'assets/images/jc2.png']),
+      Clothes(
+          'Пиджак с вырезами',
+          'Пиджак GIVENCHY',
+          '\$2019,79',
+          'assets/images/giv1.png',
+          ['assets/images/giv1.png', 'assets/images/giv1.png'])
     ];
   }
 }

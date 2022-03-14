@@ -35,10 +35,8 @@ class SearchInput extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Theme.of(context).primaryColor,
                   borderRadius: BorderRadius.circular(15)),
-              child: Image.asset(
-                'assets/icons/filter.png',
-                width: 25,
-              ),
+              child: Image.asset('assets/icons/filter.png',
+                  width: 25, color: Colors.white),
             )
           ]),
           Row(

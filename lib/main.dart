@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           backgroundColor: Color(0xFFFAFAFA),
-          primaryColor: Color(0xFF212121),
-          accentColor: Color(0xFF616161)),
+          primaryColor: Color(0xFF616161),
+          accentColor: Color(0xFF212121)),
       home: HomePage(),
     );
   }
