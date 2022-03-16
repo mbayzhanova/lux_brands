@@ -34,7 +34,7 @@ class ClothesItem extends StatelessWidget {
                             color: Colors.white.withOpacity(0.9),
                             shape: BoxShape.circle),
                         child:
-                            Icon(Icons.favorite, color: Colors.red, size: 15)))
+                            Icon(Icons.favorite, color: Colors.grey, size: 15)))
               ],
             ),
             Text(
