@@ -10,17 +10,17 @@ class Clothes {
   static List<Clothes> generateClothes() {
     return [
       Clothes(
-          'Комбинезон из бархата \n            с бантом',
+          'Комбинезон из бархата \n             с бантом',
           'YVES SAINT LAURENT',
-          '\$3814.37',
+          '\$2851.02',
           'assets/images/ysl1.png',
           ['assets/images/ysl2.png', 'assets/images/ysl2.png']),
       Clothes(
-          '    Мини-платье \n La Robe Saudade',
-          'JACQUEMUS',
-          '\$654,84',
-          'assets/images/jc.png',
-          ['assets/images/jc1.png', 'assets/images/jc2.png']),
+          ' Тренч Chelsea \n     из хлопка',
+          'BURBERRY',
+          '\$2270.98',
+          'assets/images/trench1.png',
+          ['assets/images/trench2.png', 'assets/images/trench3.png']),
       Clothes(
           '     Шерстяной жакет\nс широкими лацканами',
           'LORO PIANA',
@@ -34,11 +34,11 @@ class Clothes {
           'assets/images/loewe1.png',
           ['assets/images/loewe2.png', 'assets/images/loewe3.png']),
       Clothes(
-          ' Блузка с узором \nMACROCANNAGE',
-          'DIOR',
-          '\$2186.10',
-          'assets/images/1.png',
-          ['assets/images/2.png', 'assets/images/3.png']),
+          ' Свитер из шерсти \n       и кашемира',
+          'JW ANDERSON',
+          '\$835.64',
+          'assets/images/sweater1.png',
+          ['assets/images/sweater2.png', 'assets/images/sweater3.png']),
       Clothes(
           'Куртка-рубашка\n      из шерсти',
           'ISABEL MARANT',
