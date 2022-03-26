@@ -62,8 +62,24 @@ class Clothes {
           '\$755,82',
           'assets/images/hb1.png',
           ['assets/images/hb2.png', 'assets/images/hb3.png']),
-      Clothes('Свитшот «Gucci Band»\n для детей 3–12 лет', 'GUCCI', '\$329,13',
-          'assets/images/guccib1.png', ['assets/images/guccib2.png'])
+      Clothes(
+          ' Свитшот «Gucci Band»\n для девеочек 3–12 лет',
+          'GUCCI',
+          '\$329,13',
+          'assets/images/guccib1.png',
+          ['assets/images/guccib2.png']),
+      Clothes(
+          '   Хлопковый свитшот\n для мальчиков 5-6 лет',
+          'POLO RALPH LAUREN',
+          '\$132.84',
+          'assets/images/prlbaby1.png',
+          ['assets/images/prlbaby2.png', 'assets/images/prlbaby3.png']),
+      Clothes('Комплект для малышей\n   из трех предметов', 'BURBERRY',
+          '\$466.67', 'assets/images/burbaby1.png', [
+        'assets/images/burbaby2.png',
+        'assets/images/burbaby3.png',
+        'assets/images/burbaby4.png'
+      ])
     ];
   }
 }
