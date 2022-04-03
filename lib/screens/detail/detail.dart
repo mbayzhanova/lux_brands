@@ -11,7 +11,7 @@ class DetailPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [DetailAppBar()],
+          children: [DetailAppBar(clothes)],
         ),
       ),
     );
