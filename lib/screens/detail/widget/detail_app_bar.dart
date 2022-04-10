@@ -96,6 +96,45 @@ class _DetailAppBarState extends State<DetailAppBar> {
                   separatorBuilder: (_, index) => SizedBox(height: 3),
                   itemCount: colors.length),
             ),
+          ),
+          Container(
+            padding: EdgeInsets.only(
+                top: MediaQuery.of(context).padding.top, left: 25, right: 25),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.9),
+                        shape: BoxShape.circle),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.grey,
+                        size: 20,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.9),
+                      shape: BoxShape.circle),
+                  child: Icon(
+                    Icons.more_horiz,
+                    color: Colors.grey,
+                    size: 20,
+                  ),
+                ),
+              ],
+            ),
           )
         ],
       ),
