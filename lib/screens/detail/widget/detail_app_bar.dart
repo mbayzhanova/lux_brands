@@ -13,10 +13,10 @@ class DetailAppBar extends StatefulWidget {
 
 class _DetailAppBarState extends State<DetailAppBar> {
   final List<Color> colors = [
-    Color(0xFFE6CFC6),
+    Color(0xFF9FA8DA),
     Color(0xFFEEDFB5),
-    Color(0XFFCAE2C5),
-    Color(0XFFBAE6EE)
+    Color(0XFFB2DFDB),
+    Color(0XFFBBDEFB)
   ];
   final CarouselController _controller = CarouselController();
   int _currentPage = 0;
