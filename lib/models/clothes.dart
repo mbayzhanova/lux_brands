@@ -1,89 +1,172 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Clothes {
   String title;
   String subtitle;
   String price;
   String imageUrl;
+  String feedback;
+  String text;
   List<String> detailUrl;
-  Clothes(this.title, this.subtitle, this.price, this.imageUrl, this.detailUrl);
+  Clothes(this.title, this.subtitle, this.price, this.imageUrl, this.feedback,
+      this.text, this.detailUrl);
   static List<Clothes> generateClothes() {
     return [
-      Clothes('Комбинезон из бархата', 'YSL', '\$2851.02',
-          'assets/images/ysl1.png', [
-        'assets/images/ysl1.png',
-        'assets/images/ysl2.png',
-        'assets/images/ysl3.png',
-        'assets/images/ysl4.png',
-      ]),
-      Clothes('Тренч Chelsea', 'BURBERRY', '\$2270.98',
-          'assets/images/trench1.png', [
-        'assets/images/trench1.png',
-        'assets/images/trench2.png',
-        'assets/images/trench3.png'
-      ]),
-      Clothes('Шерстяной жакет', 'LORO PIANA', '\$3392.52',
-          'assets/images/loro1.png', [
-        'assets/images/loro1.png',
-        'assets/images/loro2.png',
-        'assets/images/loro3.png'
-      ]),
-      Clothes('Трикотажная юбка', 'LOEWE', '\$1193.00',
-          'assets/images/loewe1.png', [
-        'assets/images/loewe1.png',
-        'assets/images/loewe2.png',
-        'assets/images/loewe3.png'
-      ]),
-      Clothes('Свитер из кашемира', 'JW ANDERSON', '\$835.64',
-          'assets/images/sweater1.png', [
-        'assets/images/sweater1.png',
-        'assets/images/sweater2.png',
-        'assets/images/sweater3.png'
-      ]),
-      Clothes('Куртка-рубашка', 'ISABEL MARANT', '\$695.79',
-          'assets/images/isabelm1.png', [
-        'assets/images/isabelm1.png',
-        'assets/images/isabelm2.png',
-        'assets/images/isabelm3.png'
-      ]),
-      Clothes('Мужская рубашка', 'GIVENCHY', '\$1108.00',
-          'assets/images/giv1.png', [
-        'assets/images/giv1.png',
-        'assets/images/giv2.png',
-        'assets/images/giv3.png',
-        'assets/images/giv4.png'
-      ]),
-      Clothes('Мужские брюки', 'BALMAIN', '\$778.50',
-          'assets/images/balmainбрюки1.png', [
-        'assets/images/balmainбрюки1.png',
-        'assets/images/balmainбрюки2.png',
-        'assets/images/balmainбрюки3.png'
-      ]),
-      Clothes('Шерстяной бомбер', 'HUGO BOSS', '\$755,82',
-          'assets/images/hb1.png', [
-        'assets/images/hb1.png',
-        'assets/images/hb2.png',
-        'assets/images/hb3.png'
-      ]),
       Clothes(
-          'Свитшот для девочек',
-          'GUCCI',
-          '\$329,13',
-          'assets/images/guccib1.png',
-          ['assets/images/guccib1.png', 'assets/images/guccib2.png']),
-      Clothes('Детский свитшот', 'RALPH LAUREN', '\$132.84',
-          'assets/images/prlbaby1.png', [
+        'Комбинезон из бархата',
+        'YSL',
+        '\$2851.02',
+        'assets/images/ysl1.png',
+        '4.9 (2.7k)',
+        'Комбинезон из коллекции сезона осень-зима 2021 года. Экстремально короткую модель сшили из материалов, которые характерны для вечерних нарядов: для основы использовали плотный бархат черного цвета.',
+        [
+          'assets/images/ysl1.png',
+          'assets/images/ysl2.png',
+          'assets/images/ysl3.png',
+          'assets/images/ysl4.png',
+        ],
+      ),
+      Clothes(
+        'Тренч Chelsea',
+        'BURBERRY',
+        '\$2270.98',
+        'assets/images/trench1.png',
+        '4.3 (2.5k)',
+        'В классическую коллекцию вошел бежевый тренч из фирменного хлопкового габардина. Технологию производства этого прочного непромокаемого материала Томас Берберри изобрел в 1879 году. Два боковых кармана, как и само изделие, застегиваются на роговые пуговицы.',
+        [
+          'assets/images/trench1.png',
+          'assets/images/trench2.png',
+          'assets/images/trench3.png'
+        ],
+      ),
+      Clothes(
+        'Шерстяной жакет',
+        'LORO PIANA',
+        '\$3392.52',
+        'assets/images/loro1.png',
+        '4.1 (3.1k)',
+        'Зеленый двубортный пиджак из весенне-летней коллекции марки, основанной Пьетро Лоро Пьяна, подчеркивает талию и не утяжеляет силуэт. Однотонная модель с широкими заостренными лацканами и тремя карманами сшита из гладкой шерсти virgin.',
+        [
+          'assets/images/loro1.png',
+          'assets/images/loro2.png',
+          'assets/images/loro3.png'
+        ],
+      ),
+      Clothes(
+        'Трикотажная юбка',
+        'LOEWE',
+        '\$1193.00',
+        'assets/images/loewe1.png',
+        '4.2 (3.7k)',
+        'Словно на чистый холст Джонатан Андерсон нанес яркие абстрактные полосы на кремовую юбку из осенне-зимней коллекции марки, основанной Энрике Лоэве. Разноцветные, выполненные в технике интарсии линии переплетаются и образуют графичный узор, плавно перетекающий в длинную бахрому по краю расклешенной модели.',
+        [
+          'assets/images/loewe1.png',
+          'assets/images/loewe2.png',
+          'assets/images/loewe3.png'
+        ],
+      ),
+      Clothes(
+        'Свитер из кашемира',
+        'JW ANDERSON',
+        '\$835.64',
+        'assets/images/sweater1.png',
+        '4.1 (5.2k)',
+        'Джонатан Андерсон создал свитер из весенне-летней коллекции 2022 года по принципу color block. Дизайнер выполнил основу в черном цвете, манишку и широкий отложной воротник на молнии выделил кремовым оттенком, а рукава — бежевым. Пряжу изготовили на базе плотной шерсти, а нежные волокна кашемира сделали ее нежнее и прочнее. Сзади – коричневый патч с логотипом марки.',
+        [
+          'assets/images/sweater1.png',
+          'assets/images/sweater2.png',
+          'assets/images/sweater3.png'
+        ],
+      ),
+      Clothes(
+        'Куртка-рубашка',
+        'ISABEL MARANT',
+        '\$695.79',
+        'assets/images/isabelm1.png',
+        '4.1 (5.2k)',
+        'В осенне-зимней коллекции 2021 года клетка стала одним из любимых узоров Изабель Маран. Например, для пошива бордовой рубашки дизайнер выбрала плотную шерстяную фланель с мотивом тартан, который растерял свою четкость. Модель с двумя нагрудными карманами создана для комфортных повседневных образов.',
+        [
+          'assets/images/isabelm1.png',
+          'assets/images/isabelm2.png',
+          'assets/images/isabelm3.png'
+        ],
+      ),
+      Clothes(
+        'Мужская рубашка',
+        'GIVENCHY',
+        '\$1108.00',
+        'assets/images/giv1.png',
+        '4.1 (5.2k)',
+        'Классический воротник, висячий замок, потайная пуговичная застежка спереди, длинные рукава, манжеты на пуговицах и прямой подол. Цвет: белый.',
+        [
+          'assets/images/giv1.png',
+          'assets/images/giv2.png',
+          'assets/images/giv3.png',
+          'assets/images/giv4.png'
+        ],
+      ),
+      Clothes(
+        'Мужские брюки',
+        'BALMAIN',
+        '\$778.50',
+        'assets/images/balmainбрюки1.png',
+        '4.1 (5.2k)',
+        'У черных брюк из коллекции сезона весна-лето 2022 года есть все шансы прописаться в повседневном образе или в комплекте для торжественного мероприятия. Такой универсальной модель делают классический крой со стрелками, атласные лампасы и укороченная длина, подчеркнутая широкими отворотами. ',
+        [
+          'assets/images/balmainбрюки1.png',
+          'assets/images/balmainбрюки2.png',
+          'assets/images/balmainбрюки3.png'
+        ],
+      ),
+      Clothes(
+        'Шерстяной бомбер',
+        'HUGO BOSS',
+        '\$755,82',
+        'assets/images/hb1.png',
+        '4.1 (5.2k)',
+        'Прямой крой, застежка на молнии, два накладных кармана с клапанами спереди, манжеты и основание в рубчик. Характеристики товара для размера 48: обхват груди - 108см, обхват талии - 100 см, длина рукава от плечевого шва - 64 см, длина изделия по спинке - 64 см.',
+        [
+          'assets/images/hb1.png',
+          'assets/images/hb2.png',
+          'assets/images/hb3.png'
+        ],
+      ),
+      Clothes(
+        'Свитшот для девочек',
+        'GUCCI',
+        '\$329,13',
+        'assets/images/guccib1.png',
+        '4.1 (5.2k)',
+        'Слоганы с названием Дома используются в каждой коллекции, в результате чего рождаются новые версии принтов с логотипами бренда. Надпись «Gucci Band», впервые представленная в коллекции Pre-Fall 2019, напоминает принты на футболках музыкальных групп. В дизайне четко прослеживается влияние рок-н-ролла, характерное для творчества Gucci. На белом свитшоте для детей 3–12 лет она сочетается с нашивкой в виде клубники.',
+        ['assets/images/guccib1.png', 'assets/images/guccib2.png'],
+      ),
+      Clothes(
+        'Детский свитшот',
+        'RALPH LAUREN',
+        '\$132.84',
         'assets/images/prlbaby1.png',
-        'assets/images/prlbaby2.png',
-        'assets/images/prlbaby3.png'
-      ]),
-      Clothes('Комплект для малышей', 'BURBERRY', '\$466.67',
-          'assets/images/burbaby1.png', [
+        '4.1 (5.2k)',
+        'Белая толстовка громко заявляет о своей принадлежности бренду за счет крупного логотипа сзади, будто нанесенного разноцветными красками. Мастера марки сшили модель с объемным капюшоном из мягкого хлопкового футера. Благодаря бархатистой изнанке материал сохраняет оптимальную для тела температуру и практически не ощущается на коже.',
+        [
+          'assets/images/prlbaby1.png',
+          'assets/images/prlbaby2.png',
+          'assets/images/prlbaby3.png'
+        ],
+      ),
+      Clothes(
+        'Комплект для малышей',
+        'BURBERRY',
+        '\$466.67',
         'assets/images/burbaby1.png',
-        'assets/images/burbaby2.png',
-        'assets/images/burbaby3.png',
-        'assets/images/burbaby4.png'
-      ])
+        '4.1 (5.2k)',
+        'В комплект из мягкого хлопка входят кардиган, комбинезон и шапочка. Комбинезон и шапочка дополнены жаккардовым узором в виде шахматной доски в клетку Vintage Check.',
+        [
+          'assets/images/burbaby1.png',
+          'assets/images/burbaby2.png',
+          'assets/images/burbaby3.png',
+          'assets/images/burbaby4.png'
+        ],
+      )
     ];
   }
 }

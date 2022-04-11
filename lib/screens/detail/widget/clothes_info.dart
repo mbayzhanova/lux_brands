@@ -35,7 +35,7 @@ class ClothesInfo extends StatelessWidget {
                   color: Theme.of(context).primaryColor,
                 ),
                 Text(
-                  '4.5 (2.7k)',
+                  clothes.feedback,
                   style: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.grey),
                 )
@@ -45,13 +45,9 @@ class ClothesInfo extends StatelessWidget {
           RichText(
             text: TextSpan(children: [
               TextSpan(
-                  text:
-                      'Комбинезон из коллекции сезона осень-зима \n2021 года. Экстремально короткую модель сшили из материалов, которые характерны для \nвечерних нарядов: для основы использовали плотный бархат черного цвета.',
+                  text: clothes.text,
                   style: TextStyle(
                       color: Colors.grey.withOpacity(0.7), height: 1.5)),
-              TextSpan(
-                  text: 'далее',
-                  style: TextStyle(color: Theme.of(context).primaryColor))
             ]),
           )
         ],
